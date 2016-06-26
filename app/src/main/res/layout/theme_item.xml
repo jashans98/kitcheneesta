@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/themeIcon"
+        android:src="@drawable/messi_theme_cake"
+        android:tint="#66000000"
+        android:tintMode="src_atop"
+        android:layout_margin="0dp"
+        android:padding="0dp"
+        android:scaleType="centerCrop"/>
+</RelativeLayout>
