@@ -39,16 +39,16 @@ public class HomeActivity extends Activity {
                 email.putExtra(Intent.EXTRA_EMAIL, new String[]{"kitcheneesta@gmail.com"});
                 email.putExtra(Intent.EXTRA_SUBJECT, "Kitcheneesta Support");
                 email.setType("message/rfc822");
-                startActivity(Intent.createChooser(email, "Choose an Email client :"));
+                startActivity(Intent.createChooser(email, "Choose an Email client:"));
             }
         });
 
         mPhoneButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //calls 9910458939
+                //calls the phone number
                 Intent intent = new Intent (Intent.ACTION_DIAL);
-                intent.setData(Uri.parse("tel:09910458939"));
+                intent.setData(Uri.parse("tel:423002312"));
                 startActivity(intent);
             }
         });
@@ -56,9 +56,9 @@ public class HomeActivity extends Activity {
         mNavButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //navigate to westend heights
+                // navigate to address (random for now)
                 Intent intent = new Intent(Intent.ACTION_VIEW);
-                intent.setData(Uri.parse("geo:0,0?q=Westend Heights, DLF Phase 5, Gurgaon"));
+                intent.setData(Uri.parse("geo:0,0?q=Empire State Building"));
                 startActivity(intent);
             }
         });
